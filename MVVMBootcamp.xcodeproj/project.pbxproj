@@ -105,10 +105,7 @@
 				9B3C7AD72C15C05A00F02C4B /* Controllers */,
 				9B3C7AD62C15C05300F02C4B /* ViewModel */,
 				9B3C7AD52C15C04B00F02C4B /* View */,
-				9B3C7AD02C1479D600F02C4B /* MainViewController */,
 				9B3C7AA02C143E5A00F02C4B /* AppDelegate.swift */,
-				9B3C7AA92C143E5C00F02C4B /* Assets.xcassets */,
-				9B3C7AAB2C143E5C00F02C4B /* LaunchScreen.storyboard */,
 				9B3C7AAE2C143E5C00F02C4B /* Info.plist */,
 			);
 			path = MVVMBootcamp;
@@ -143,6 +140,7 @@
 		9B3C7AD52C15C04B00F02C4B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B3C7AAB2C143E5C00F02C4B /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +155,7 @@
 		9B3C7AD72C15C05A00F02C4B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9B3C7AD02C1479D600F02C4B /* MainViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +177,7 @@
 		9B3C7ADA2C15C07200F02C4B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9B3C7AA92C143E5C00F02C4B /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

@@ -97,6 +97,14 @@
 		9B3C7A9F2C143E5A00F02C4B /* MVVMBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				9B3C7ADC2C15C08D00F02C4B /* Networking */,
+				9B3C7ADB2C15C07B00F02C4B /* Extensions */,
+				9B3C7ADA2C15C07200F02C4B /* Resources */,
+				9B3C7AD92C15C06900F02C4B /* Classes */,
+				9B3C7AD82C15C06300F02C4B /* Model */,
+				9B3C7AD72C15C05A00F02C4B /* Controllers */,
+				9B3C7AD62C15C05300F02C4B /* ViewModel */,
+				9B3C7AD52C15C04B00F02C4B /* View */,
 				9B3C7AD02C1479D600F02C4B /* MainViewController */,
 				9B3C7AA02C143E5A00F02C4B /* AppDelegate.swift */,
 				9B3C7AA92C143E5C00F02C4B /* Assets.xcassets */,
@@ -130,6 +138,62 @@
 				9B3C7AD22C147A1600F02C4B /* MainViewController.xib */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		9B3C7AD52C15C04B00F02C4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B3C7AD62C15C05300F02C4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9B3C7AD72C15C05A00F02C4B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B3C7AD82C15C06300F02C4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B3C7AD92C15C06900F02C4B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9B3C7ADA2C15C07200F02C4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9B3C7ADB2C15C07B00F02C4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B3C7ADC2C15C08D00F02C4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

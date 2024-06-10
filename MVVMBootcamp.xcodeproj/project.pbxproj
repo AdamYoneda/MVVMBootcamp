@@ -15,6 +15,7 @@
 		9B3C7AC42C143E5C00F02C4B /* MVVMBootcampUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7AC32C143E5C00F02C4B /* MVVMBootcampUITestsLaunchTests.swift */; };
 		9B3C7AD32C147A1600F02C4B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B3C7AD22C147A1600F02C4B /* MainViewController.xib */; };
 		9B3C7AD42C147A1600F02C4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7AD12C147A1600F02C4B /* MainViewController.swift */; };
+		9B3C7ADE2C16F65000F02C4B /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7ADD2C16F65000F02C4B /* MainViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9B3C7AC32C143E5C00F02C4B /* MVVMBootcampUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMBootcampUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B3C7AD12C147A1600F02C4B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9B3C7AD22C147A1600F02C4B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9B3C7ADD2C16F65000F02C4B /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				9B3C7AD12C147A1600F02C4B /* MainViewController.swift */,
 				9B3C7AD22C147A1600F02C4B /* MainViewController.xib */,
+				9B3C7ADD2C16F65000F02C4B /* MainViewController+TableView.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3C7AA12C143E5A00F02C4B /* AppDelegate.swift in Sources */,
+				9B3C7ADE2C16F65000F02C4B /* MainViewController+TableView.swift in Sources */,
 				9B3C7AD42C147A1600F02C4B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

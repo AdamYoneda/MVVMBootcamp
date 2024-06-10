@@ -13,6 +13,12 @@ import UIKit
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
+    func setupTableView() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        self.tableView.backgroundColor = .clear
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0 // 仮

@@ -15,19 +15,14 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configView()
+    }
+    
+    /// MainVCのview関連の設定をviewDidLoad内で行う
+    private func configView() {
         self.title = "Main View"
         self.view.backgroundColor = .cyan
+        
+        setupTableView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

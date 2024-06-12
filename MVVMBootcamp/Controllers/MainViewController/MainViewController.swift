@@ -12,6 +12,9 @@ class MainViewController: UIViewController {
     // IBOutlets:
     @IBOutlet weak var tableView: UITableView!
 
+    // ViewModel:
+    var viewModel: MainViewModel = MainViewModel() // 通常はイニシャライザの中に埋め込むが、ここでは単にインスタンスを作成する
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -17,6 +17,7 @@ import Foundation
  各ビューコントローラや各ビューに関連するすべてのロジックは、ビューモデルの内部で発生するはずです。
  ビューモデルはすべてのロジックを持つべきではありませんし、ビューコントローラーはできるだけダミーであるべきです。
  ビューモデルは、ビューコントローラーやビューにデータを提示するために、ビューコントローラーやビューに返答する役割を担っています。
- 
+ we need some kind of the functions to retaining back the data to the view controller and the view controller can present them inside the table view.
+ ビュー・コントローラーにデータを保持し、ビュー・コントローラーがそれらをテーブル・ビューの中に表示できるようにするには、何らかの関数が必要である。
  
  */

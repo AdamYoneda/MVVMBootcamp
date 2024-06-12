@@ -18,6 +18,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.dataSource = self
         
         self.tableView.backgroundColor = .clear
+        
+        registerCells()
+    }
+    
+    func registerCells() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,6 +35,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell() // 仮
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "\(indexPath.row)"
+        return cell
     }
 }

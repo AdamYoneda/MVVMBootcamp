@@ -14,4 +14,8 @@ import Foundation
 
 public class APICaller {
     
+    static func getTrendingMovies(
+        completionHandler: @escaping(_ result: Result<TrendingMovieModel, Error>) -> Void) {
+        
+    }
 }

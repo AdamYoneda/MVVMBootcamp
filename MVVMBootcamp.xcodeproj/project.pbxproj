@@ -19,6 +19,7 @@
 		9B3C7AE02C19BC4300F02C4B /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7ADF2C19BC4300F02C4B /* Memo.swift */; };
 		9B3C7AE22C19BD9900F02C4B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7AE12C19BD9900F02C4B /* MainViewModel.swift */; };
 		9B790FA82C1C32E700B157AA /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FA72C1C32E700B157AA /* NetworkConstant.swift */; };
+		9B790FAA2C1C5A3100B157AA /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FA92C1C5A3100B157AA /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9B3C7ADF2C19BC4300F02C4B /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		9B3C7AE12C19BD9900F02C4B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9B790FA72C1C32E700B157AA /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		9B790FA92C1C5A3100B157AA /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				9B790FA72C1C32E700B157AA /* NetworkConstant.swift */,
+				9B790FA92C1C5A3100B157AA /* APICaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				9B3C7AE22C19BD9900F02C4B /* MainViewModel.swift in Sources */,
 				9B3C7AA12C143E5A00F02C4B /* AppDelegate.swift in Sources */,
 				9B3C7ADE2C16F65000F02C4B /* MainViewController+TableView.swift in Sources */,
+				9B790FAA2C1C5A3100B157AA /* APICaller.swift in Sources */,
 				9B3C7AD42C147A1600F02C4B /* MainViewController.swift in Sources */,
 				9B790FA82C1C32E700B157AA /* NetworkConstant.swift in Sources */,
 				9B3C7AE02C19BC4300F02C4B /* Memo.swift in Sources */,

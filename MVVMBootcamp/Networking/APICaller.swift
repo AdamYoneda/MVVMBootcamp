@@ -31,5 +31,17 @@ public class APICaller {
                 return
             }
             
+            // 2. URLからデータを取得
+            URLSession.shared.dataTask(with: url) { dataResponse, urlResponse, error in
+                // 各返り値のnilチェック
+                if error == nil,
+                   let data = dataResponse,
+                   let resultData = try? JSONDecoder().decode(TrendingMovieModel.self, from: data) {
+                    completionHandler(.success(resultData))
+                } else {
+                    completionHandler(.failure(.canNotParseData))
+                }
+                
+            }.resume()
         }
 }

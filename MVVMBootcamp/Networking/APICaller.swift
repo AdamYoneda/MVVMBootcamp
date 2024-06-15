@@ -21,7 +21,15 @@ enum NetworkError: Error {
 public class APICaller {
     
     static func getTrendingMovies(
-        completionHandler: @escaping(_ result: Result<TrendingMovieModel, NetworkError>) -> Void) {
-        
-    }
+        completionHandler: @escaping(_ result: Result<TrendingMovieModel, NetworkError>)
+        -> Void) {
+            // 1. URLの作成
+            let urlString = NetworkConstant.shared.serverAdress + "trending/all/day?api_key=" + NetworkConstant.shared.apiKey
+            
+            guard let url = URL(string: urlString) else {
+                completionHandler(.failure(.urlError))
+                return
+            }
+            
+        }
 }

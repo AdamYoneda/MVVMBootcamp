@@ -21,6 +21,12 @@ class MainViewController: UIViewController {
         configView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        viewModel.getData()
+    }
+    
     /// MainVCのview関連の設定をviewDidLoad内で行う
     private func configView() {
         self.title = "Main View"

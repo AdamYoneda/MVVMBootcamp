@@ -28,7 +28,7 @@ class NetworkConstant {
     public var serverAdress: String {
         // read Only
         get {
-            return "https://www.themoviedb.org/3/"
+            return "https://api.themoviedb.org/3/"
         }
     }
     

@@ -11,6 +11,9 @@ import Foundation
 
 class MainViewModel {
     
+    // defaultはロードしていないためfalseに設定
+    var isLoading: Observable<Bool> = Observable(false)
+    
     func numberOfSections() -> Int {
         return 1 // 仮
     }
@@ -20,7 +23,15 @@ class MainViewModel {
     }
     
     func getData() {
-        APICaller.getTrendingMovies { result in
+        // loading時にはCallerからデータを取得しない
+        if isLoading.value ?? true {
+            return
+        }
+        
+        APICaller.getTrendingMovies { [weak self] result in
+            // Callerからデータを取る(= データを取得したとき)はインディケータ等を非表示にしたいので、falseにする
+            self?.isLoading.value = false
+            
             switch result {
             case .success(let data):
                 // テスト用コード

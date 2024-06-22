@@ -27,10 +27,11 @@ class MainViewModel {
         if isLoading.value ?? true {
             return
         }
+        isLoading.value = true // loading process START
         
         APICaller.getTrendingMovies { [weak self] result in
             // Callerからデータを取る(= データを取得したとき)はインディケータ等を非表示にしたいので、falseにする
-            self?.isLoading.value = false
+            self?.isLoading.value = false // loading process END
             
             switch result {
             case .success(let data):

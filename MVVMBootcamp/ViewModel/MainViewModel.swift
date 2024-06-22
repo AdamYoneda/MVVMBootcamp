@@ -13,6 +13,8 @@ class MainViewModel {
     
     // defaultはロードしていないためfalseに設定
     var isLoading: Observable<Bool> = Observable(false)
+    // getData()で取得したデータ
+    var dataSource: TrendingMovieModel?
     
     func numberOfSections() -> Int {
         return 1 // 仮
@@ -35,11 +37,10 @@ class MainViewModel {
             
             switch result {
             case .success(let data):
-                // テスト用コード
-                print("\(#function) -- Top Trending Counts: \(data.results.count)")
+                print("\(#function) -- Top Trending Counts: \(data.results.count)") // テスト用コード
+                self?.dataSource = data
             case .failure(let error):
-                // テスト用コード
-                print("Error at MainViewModel \(#function)", error)
+                print("Error at MainViewModel \(#function)", error) // テスト用コード
             }
         }
     }

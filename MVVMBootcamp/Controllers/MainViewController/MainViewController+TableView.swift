@@ -42,7 +42,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = self.cellDataSource[indexPath.row].name ?? self.cellDataSource[indexPath.row].title ?? "タイトル不明"
+        let movie = self.cellDataSource[indexPath.row]
+        cell.textLabel?.text = self.viewModel.getMovieTitle(movie)
         return cell
     }
 }

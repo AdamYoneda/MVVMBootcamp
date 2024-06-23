@@ -51,4 +51,8 @@ class MainViewModel {
     private func mapCellData() {
         cellDataSource.value = self.dataSource?.results ?? []
     }
+    
+    func getMovieTitle(_ movie: Movie) -> String {
+        return movie.title ?? movie.name ?? "---NO TITLE---"
+    }
 }

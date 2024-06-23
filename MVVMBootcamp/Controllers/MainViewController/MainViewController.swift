@@ -11,7 +11,8 @@ class MainViewController: UIViewController {
     
     // IBOutlets:
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     // ViewModel:
     var viewModel: MainViewModel = MainViewModel() // 通常はイニシャライザの中に埋め込むが、ここでは単にインスタンスを作成する
     
@@ -33,5 +34,8 @@ class MainViewController: UIViewController {
         self.view.backgroundColor = .cyan
         
         setupTableView()
+        
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
     }
 }

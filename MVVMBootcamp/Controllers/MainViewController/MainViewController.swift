@@ -16,6 +16,9 @@ class MainViewController: UIViewController {
     // ViewModel:
     var viewModel: MainViewModel = MainViewModel() // 通常はイニシャライザの中に埋め込むが、ここでは単にインスタンスを作成する
     
+    // variables:
+    var cellDataSource: [Movie] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,6 +45,7 @@ class MainViewController: UIViewController {
     /// bind(_ listener: @escaping ((T?) -> Void)) を呼び出す。
     /// （データバインディング：データと対象を結びつけ、データあるいは対象の変更を暗示的にもう一方の変更へ反映すること、それを実現する仕組みのことである → 一方を変更するともう一方を自動的に変更すること。）
     private func bindViewModel() {
+        // isLoadingのデータバインディング
         viewModel.isLoading.bind { [weak self] isLoading in
             guard let self, let isLoading else { return }
             
@@ -52,6 +56,14 @@ class MainViewController: UIViewController {
                     self.activityIndicator.stopAnimating()
                 }
             }
+        }
+        
+        // cellDataSourceのデータバインディング
+        viewModel.cellDataSource.bind { [weak self] movies in
+            guard let self, let movies else { return }
+            
+            self.cellDataSource = movies
+            self.reloadTableView()
         }
     }
 }

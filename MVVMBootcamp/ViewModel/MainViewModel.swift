@@ -11,10 +11,12 @@ import Foundation
 
 class MainViewModel {
     
-    // defaultはロードしていないためfalseに設定
+    /// defaultはロードしていないためfalseに設定
     var isLoading: Observable<Bool> = Observable(false)
-    // getData()で取得したデータ
+    /// getData()で取得したデータ
     var dataSource: TrendingMovieModel?
+    /// ViewControllerに反映させたいobservableなデータソース
+    var cellDataSource: Observable<[Movie]> = Observable([])
     
     func numberOfSections() -> Int {
         return 1 // 仮
@@ -39,9 +41,14 @@ class MainViewModel {
             case .success(let data):
                 print("\(#function) -- Top Trending Counts: \(data.results.count)") // テスト用コード
                 self?.dataSource = data
+                self?.mapCellData()
             case .failure(let error):
                 print("Error at MainViewModel \(#function)", error) // テスト用コード
             }
         }
+    }
+    
+    private func mapCellData() {
+        cellDataSource.value = self.dataSource?.results ?? []
     }
 }

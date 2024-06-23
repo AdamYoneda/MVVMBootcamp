@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MVVMBootcamp" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="QQ7-W5-PXf" id="rJf-HP-U8e"/>
                 <outlet property="tableView" destination="Hac-td-pbB" id="s4o-gH-cbg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,11 +24,17 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QQ7-W5-PXf">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemGray2Color"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Hac-td-pbB" secondAttribute="bottom" id="24c-VC-Mgl"/>
+                <constraint firstItem="QQ7-W5-PXf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Sfh-R1-vOd"/>
+                <constraint firstItem="QQ7-W5-PXf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SgT-lb-pd4"/>
                 <constraint firstItem="Hac-td-pbB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YuR-LH-sbQ"/>
                 <constraint firstItem="Hac-td-pbB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aWX-o7-UHr"/>
                 <constraint firstItem="Hac-td-pbB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="o4y-3T-gsk"/>
@@ -38,6 +45,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

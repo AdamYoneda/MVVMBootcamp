@@ -21,6 +21,7 @@
 		9B790FA82C1C32E700B157AA /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FA72C1C32E700B157AA /* NetworkConstant.swift */; };
 		9B790FAA2C1C5A3100B157AA /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FA92C1C5A3100B157AA /* APICaller.swift */; };
 		9B790FAC2C1C5BFE00B157AA /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FAB2C1C5BFE00B157AA /* TrendingMoviesModel.swift */; };
+		9B790FB02C22C9E900B157AA /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FAF2C22C9E900B157AA /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		9B790FA72C1C32E700B157AA /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		9B790FA92C1C5A3100B157AA /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		9B790FAB2C1C5BFE00B157AA /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
+		9B790FAF2C22C9E900B157AA /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		9B3C7AD92C15C06900F02C4B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9B790FAF2C22C9E900B157AA /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				9B3C7AA12C143E5A00F02C4B /* AppDelegate.swift in Sources */,
 				9B3C7ADE2C16F65000F02C4B /* MainViewController+TableView.swift in Sources */,
 				9B790FAC2C1C5BFE00B157AA /* TrendingMoviesModel.swift in Sources */,
+				9B790FB02C22C9E900B157AA /* Observable.swift in Sources */,
 				9B790FAA2C1C5A3100B157AA /* APICaller.swift in Sources */,
 				9B3C7AD42C147A1600F02C4B /* MainViewController.swift in Sources */,
 				9B790FA82C1C32E700B157AA /* NetworkConstant.swift in Sources */,

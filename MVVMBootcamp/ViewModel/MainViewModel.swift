@@ -21,7 +21,7 @@ class MainViewModel {
     }
     
     func numberOfRows(in section: Int) -> Int {
-        return 10 // 仮
+        return dataSource?.results.count ?? 0
     }
     
     func getData() {

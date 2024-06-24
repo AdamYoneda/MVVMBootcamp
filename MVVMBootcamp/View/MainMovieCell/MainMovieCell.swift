@@ -18,6 +18,9 @@ class MainMovieCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backView.addBorder(color: .label, width: 1.0)
+        backView.round(10.0)
+        
+        movieImageView.round(5.0)
     }
 }

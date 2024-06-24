@@ -18,6 +18,8 @@
 		9B3C7ADE2C16F65000F02C4B /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7ADD2C16F65000F02C4B /* MainViewController+TableView.swift */; };
 		9B3C7AE02C19BC4300F02C4B /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7ADF2C19BC4300F02C4B /* Memo.swift */; };
 		9B3C7AE22C19BD9900F02C4B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C7AE12C19BD9900F02C4B /* MainViewModel.swift */; };
+		9B624D1D2C29777400FD5ED4 /* MainMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B624D1C2C29777400FD5ED4 /* MainMovieCell.xib */; };
+		9B624D1E2C29777400FD5ED4 /* MainMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B624D1B2C29777400FD5ED4 /* MainMovieCell.swift */; };
 		9B790FA82C1C32E700B157AA /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FA72C1C32E700B157AA /* NetworkConstant.swift */; };
 		9B790FAA2C1C5A3100B157AA /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FA92C1C5A3100B157AA /* APICaller.swift */; };
 		9B790FAC2C1C5BFE00B157AA /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B790FAB2C1C5BFE00B157AA /* TrendingMoviesModel.swift */; };
@@ -57,6 +59,8 @@
 		9B3C7ADD2C16F65000F02C4B /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 		9B3C7ADF2C19BC4300F02C4B /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		9B3C7AE12C19BD9900F02C4B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9B624D1B2C29777400FD5ED4 /* MainMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovieCell.swift; sourceTree = "<group>"; };
+		9B624D1C2C29777400FD5ED4 /* MainMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMovieCell.xib; sourceTree = "<group>"; };
 		9B790FA72C1C32E700B157AA /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		9B790FA92C1C5A3100B157AA /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		9B790FAB2C1C5BFE00B157AA /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 		9B3C7AD52C15C04B00F02C4B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B624D1A2C2976A200FD5ED4 /* MainMovieCell */,
 				9B3C7AAB2C143E5C00F02C4B /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -215,6 +220,15 @@
 				9B790FA92C1C5A3100B157AA /* APICaller.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9B624D1A2C2976A200FD5ED4 /* MainMovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				9B624D1B2C29777400FD5ED4 /* MainMovieCell.swift */,
+				9B624D1C2C29777400FD5ED4 /* MainMovieCell.xib */,
+			);
+			path = MainMovieCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +338,7 @@
 				9B3C7AAA2C143E5C00F02C4B /* Assets.xcassets in Resources */,
 				9B3C7AD32C147A1600F02C4B /* MainViewController.xib in Resources */,
 				9B3C7AAD2C143E5C00F02C4B /* Base in Resources */,
+				9B624D1D2C29777400FD5ED4 /* MainMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +368,7 @@
 				9B3C7ADE2C16F65000F02C4B /* MainViewController+TableView.swift in Sources */,
 				9B790FAC2C1C5BFE00B157AA /* TrendingMoviesModel.swift in Sources */,
 				9B790FB02C22C9E900B157AA /* Observable.swift in Sources */,
+				9B624D1E2C29777400FD5ED4 /* MainMovieCell.swift in Sources */,
 				9B790FAA2C1C5A3100B157AA /* APICaller.swift in Sources */,
 				9B3C7AD42C147A1600F02C4B /* MainViewController.swift in Sources */,
 				9B790FA82C1C32E700B157AA /* NetworkConstant.swift in Sources */,

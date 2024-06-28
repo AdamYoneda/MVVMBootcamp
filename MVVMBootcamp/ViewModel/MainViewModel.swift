@@ -53,8 +53,4 @@ class MainViewModel {
             return MovieTableCellViewModel(movie: movie)
         })
     }
-    
-    func getMovieTitle(_ movie: Movie) -> String {
-        return movie.title ?? movie.name ?? "---NO TITLE---"
-    }
 }

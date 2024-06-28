@@ -9,6 +9,16 @@ import UIKit
 import SDWebImage
 
 class MainMovieCell: UITableViewCell {
+    
+    static var identifier: String {
+        get {
+            return "MainMovieCell"
+        }
+    }
+    
+    static func register() -> UINib {
+        return UINib(nibName: "MainMovieCell", bundle: nil)
+    }
 
     // IBOutlets:
     @IBOutlet weak var backView: UIView!

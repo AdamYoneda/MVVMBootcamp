@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     var viewModel: MainViewModel = MainViewModel() // 通常はイニシャライザの中に埋め込むが、ここでは単にインスタンスを作成する
     
     // variables:
-    var cellDataSource: [Movie] = []
+    var cellDataSource: [MovieTableCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
     /// MainVCのview関連の設定をviewDidLoad内で行う
     private func configView() {
         self.title = "Main View"
-        self.view.backgroundColor = .cyan
+        self.view.backgroundColor = .systemBackground
         
         setupTableView()
         

@@ -16,7 +16,7 @@ class MainViewModel {
     /// getData()で取得したデータ
     var dataSource: TrendingMovieModel?
     /// ViewControllerに反映させたいobservableなデータソース
-    var cellDataSource: Observable<[Movie]> = Observable([])
+    var cellDataSource: Observable<[MovieTableCellViewModel]> = Observable([])
     
     func numberOfSections() -> Int {
         return 1 // 仮
@@ -49,10 +49,8 @@ class MainViewModel {
     }
     
     private func mapCellData() {
-        cellDataSource.value = self.dataSource?.results ?? []
-    }
-    
-    func getMovieTitle(_ movie: Movie) -> String {
-        return movie.title ?? movie.name ?? "---NO TITLE---"
+        cellDataSource.value = self.dataSource?.results.compactMap({ movie in
+            return MovieTableCellViewModel(movie: movie)
+        })
     }
 }

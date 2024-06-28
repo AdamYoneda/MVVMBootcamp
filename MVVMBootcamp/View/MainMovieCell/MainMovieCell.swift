@@ -33,6 +33,9 @@ class MainMovieCell: UITableViewCell {
         backView.round(10.0)
         
         movieImageView.round(5.0)
+        movieImageView.contentMode = .scaleAspectFill
+        
+        backView.backgroundColor = .systemGray5
     }
     
     func setupCell(viewModel: MovieTableCellViewModel) {

@@ -18,6 +18,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.dataSource = self
         
         self.tableView.backgroundColor = .clear
+        self.tableView.separatorStyle = .none
         
         registerCells()
     }
@@ -46,6 +47,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
         let cellViewModel = self.cellDataSource[indexPath.row]
         cell.setupCell(viewModel: cellViewModel)
+        cell.selectionStyle = .none
         return cell
     }
     

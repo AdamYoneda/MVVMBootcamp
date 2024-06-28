@@ -23,4 +23,8 @@ class MainMovieCell: UITableViewCell {
         
         movieImageView.round(5.0)
     }
+    
+    func setupCell(viewModel: MovieTableCellViewModel) {
+        
+    }
 }

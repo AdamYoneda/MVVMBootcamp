@@ -53,4 +53,9 @@ class MainViewModel {
             return MovieTableCellViewModel(movie: movie)
         })
     }
+    
+    func retribeMovie(with id: Int) -> Movie? {
+        let movie = dataSource?.results.first(where: { $0.id == id })
+        return movie
+    }
 }

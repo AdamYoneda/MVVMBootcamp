@@ -66,4 +66,14 @@ class MainViewController: UIViewController {
             self.reloadTableView()
         }
     }
+    
+    /// MovieのDIを用いたDetailsMovieVCへの遷移
+    func openDetail(movieId: Int) {
+        guard let movie = viewModel.retribeMovie(with: movieId) else { return }
+        let detailsMovieViewModel = DetailsMovieViewModel(movie: movie)
+        let detailsMovieViewController = DetailsMovieViewController(viewModel: detailsMovieViewModel)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(detailsMovieViewController, animated: true)
+        }
+    }
 }

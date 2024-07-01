@@ -21,7 +21,7 @@ class NetworkConstant {
         // read Only
         get {
             // API Key from https://www.themoviedb.org/settings/api
-            return "78b0d48c6000669101abcb96fc090062"
+            return ProcessInfo.processInfo.environment["API_KEY"] ?? ""
         }
     }
     

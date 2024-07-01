@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailsMovieViewController: UIViewController {
-
+    
     // IBOutlets:
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -30,6 +31,13 @@ class DetailsMovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureView()
     }
-
+    
+    private func configureView() {
+        self.title = "Movie Details"
+        titleLabel.text = viewModel.movieTitle
+        descriptionLabel.text = viewModel.movieDescription
+        imageView.sd_setImage(with: viewModel.movieImage)
+    }
 }
